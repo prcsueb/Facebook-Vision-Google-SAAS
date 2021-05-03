@@ -80,13 +80,7 @@ public class CloudVision extends HttpServlet {
                 request.setAttribute("imageLabels", labelsFromStore);
                 RequestDispatcher dispatcher = getServletContext()
                         .getRequestDispatcher("/labels.jsp");
-                try {
-                    dispatcher.forward(request, response);
-                } catch (ServletException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+               
             });
         }
 
